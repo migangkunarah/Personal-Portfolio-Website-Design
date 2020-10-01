@@ -1,0 +1,95 @@
+@import url(./fonts.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* color */
+    --light-blue:linear-gradient(50deg , rgba(104, 255, 104, 0.781) 50%, #ffffff21 50%);
+    --black: black;
+    --black-l:linear-gradient(#000000cc , #000000b4);
+    --white:white;
+    --white-l: rgba(255, 255, 255, 0.8);
+
+    /* fonts */
+    --cuprum : 'cuprum';
+    --cuprum-b : 'cuprum-b';
+    --monstrate : 'monstrate';
+    --monstrate-b : 'monstrate-b';
+}
+
+header{
+    background: url(../image/Auth_back.svg);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header h1{
+    font-family: var(--cuprum-b);
+    font-size: 50px;
+}
+header .main-box{
+    background: linear-gradient(#c0ffbd , #bce7c1);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-shadow: 1px 1px 10px rgb(187, 255, 181);
+    border-radius: 10px;
+}
+
+header .main-box .logo img{
+    height: 70px;
+    border-radius: 7px;
+    align-items: center;
+    margin-bottom: 2rem ;
+    box-shadow: 1px 1px 5px rgb(119, 119, 119);
+}
+
+header .main-box .fields , form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+header .main-box .fields  form input{
+    margin: 1rem 0rem;
+    width: 20rem;
+    height: 2rem;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 1.5px solid black;
+    font-family: var(--monstrate);
+}
+
+header .main-box .fields p{
+    font-family: var(--monstrate);
+}
+header .main-box .fields a{
+    text-decoration: none;
+    color: rgb(0, 63, 122);
+    font-family: var(--monstrate-b);
+}
+header .main-box .fields a:hover{
+    color: rgb(6, 108, 202);
+}
+
+@media only screen and (max-width:400px){
+    header .main-box{
+        padding: 1rem;
+    }
+    header .main-box .fields  form input{
+        width: 15rem;
+    }
+}

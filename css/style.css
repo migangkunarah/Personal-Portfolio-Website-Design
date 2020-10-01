@@ -1,0 +1,530 @@
+@import url(./fonts.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* color */
+    --light-blue:linear-gradient(50deg , rgba(91, 250, 255, 0.76) 50%, #ffffff21 50%);
+    --black: black;
+    --black-l:linear-gradient(#000000cc , #000000b4);
+    --white:white;
+    --white-l: rgba(255, 255, 255, 0.8);
+
+    /* fonts */
+    --cuprum : 'cuprum';
+    --cuprum-b : 'cuprum-b';
+    --monstrate : 'monstrate';
+    --monstrate-b : 'monstrate-b';
+}
+
+nav .navigation{
+    background-color: rgba(0, 0, 0, 0.63);
+    padding: 1rem 10rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+nav .navigation .logo{
+    font-size: 20px;
+    color: white;
+}
+nav .navigation .bars{
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+nav .navigation .bars .bar{
+    height: 2.5px;
+    background-color: white;
+    margin: .4rem;
+    border-radius: 1rem;
+}
+
+nav .navigation .bars .bar-1{
+    width: 1.7rem;
+}
+
+nav .navigation .bars .bar-2{
+    width: 1.2rem;
+}
+
+nav .navigation .bars .bar-3{
+    width: .7rem;
+}
+
+.items{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.658);
+    height: 90vh;
+    overflow: hidden;
+    padding: 2rem 0rem;
+    z-index: 20;
+    width: 0;
+    transition: 1s ease-in;
+}
+
+.nav_show{
+    width: 50vh;
+}
+
+.items .nav-link a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: var(--monstrate);
+}
+.items .nav-link{
+    background-color: rgba(255, 255, 255, 0.24);
+    margin: 1rem;
+    border-radius: 5px;
+}
+.items .nav-link:hover{
+    box-shadow: 1px 3px 10px rgba(53, 53, 53, 0.616);
+}
+
+
+
+header {
+    background:var(--light-blue), url(../image/tathagata_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+}
+
+header .name{
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translate(0% , -50%);
+    z-index: 2;
+}
+header .name .intro{
+    font-size: 20px;
+    font-family: var(--monstrate);
+}
+
+header .name .intro h1{
+    font-size: 60px;
+    font-family: var(--monstrate-b);
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.788);
+}
+header .name .but {
+    background: rgb(145, 47, 236);
+    box-shadow: 1px 1px 10px rgb(147, 31, 255);
+    color: rgb(255, 255, 255);
+    padding: .5rem 2rem;
+}
+header .name .but:hover{
+    background:rgb(139, 15, 255) ;
+}
+header .name .line-text{
+    display: flex;
+    align-items: center;
+}
+header .name .line{
+    background: black;
+    height: 2px;
+    width: 10rem;
+    margin-bottom: .7rem;
+    margin-left: 1rem;
+    animation: stretch 1s ease-in-out forwards;
+}
+
+#popUpMain{
+    position: fixed;
+    z-index: 99999;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.671);
+    transition: 1s ease;
+}
+#popUpMain i{
+    cursor: pointer;
+    transition: .3s ease;
+}
+#popUpMain i:hover{
+    transform: scale(1.1);
+    transition: .3s ease;
+}
+
+#popup{
+    width: 30rem;
+    height: 35rem;
+    background-image: linear-gradient(#00000041 , #00000048) ,url(../image/Auth_back.svg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    padding: 1rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px rgba(255, 255, 255, 0.644);
+    overflow: hidden;
+    transition: 1s ease-in-out;
+}
+#popUpMain #popup .top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#popUpMain #popup .top .sign_in_but button:hover{
+    box-shadow: 1px 1px 7px rgba(0, 128, 0, 0.534);
+}
+
+#popUpMain #popup #signUp_pop{
+    font-family: var(--monstrate-b);
+    color: #7212cc;
+    text-shadow: 1px 1px 5px #7700e6a2;
+
+}
+
+#popUpMain #popup  input{
+    width: 20rem;
+    margin: .2rem;
+    border: none;
+    background: rgba(255, 255, 255, 0.514);
+    outline: none;
+    padding: .3rem;
+    border-radius: 3px;
+    border: 1px solid #7700e6;
+    box-shadow: 1px 1px 7px #7700e642;
+    font-family: var(--monstrate);
+}
+
+#popUpMain #popup p{
+    margin-top: 1rem;
+    font-family: var(--monstrate);
+}
+#popUpMain #popup p a{
+    font-family: var(--monstrate-b);
+    text-decoration: none;
+}
+#popUpMain #popup .bottom{
+    border-top: 1px solid black;
+    padding-top: 1rem;
+}
+#popUpMain #popup .bottom .subscribe h4{
+    font-family: var(--monstrate-b);
+    margin-bottom: 1.5rem;
+}
+#popUpMain #popup .bottom .subscribe a{
+    font-size: 20px;
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: 4px;
+    transition: .3s ease;
+}
+#popUpMain #popup .bottom .subscribe a:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 8px rgba(255, 0, 0, 0.664);
+    transition: .3s ease-in-out;
+}
+@keyframes stretch{
+    from{
+        width: 0;
+    }
+    to{
+        width: 10rem;
+    }
+}
+main .sec-1{
+    background: url(../image/back.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 1rem 0rem;
+}
+main .box {
+    background:var(--black-l), url(../image/Music_page_IMAGE.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    padding: 3rem 2rem;
+    border-radius: 3px;
+    margin: 1rem 0rem;
+}
+
+main .box-container-2{
+    background:var(--black-l), url(../image/Tathagata_2.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+main .box h1{
+    color: white;
+    font-family: var(--monstrate-b);
+
+}
+main .box p{
+    color: var(--white);
+    font-family: var(--monstrate);
+    margin-bottom: 3rem;
+}
+
+main .sec-1 .box a{
+    text-decoration: none;
+    color: var(--white);
+    padding: 1rem 3rem;
+    background: rgb(145, 47, 236);
+    box-shadow: 1px 1px 10px #9a2fff;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+main .sec-1 .box-container-2 a{
+    background: rgb(236, 148, 47);
+    box-shadow: 1px 1px 10px rgba(236, 148, 47, 0.603);
+}
+main .sec-1 .box-container-3 a{
+    background: rgb(47, 107, 236);
+    box-shadow: 1px 1px 10px rgba(47, 107, 236, 0.521);
+}
+
+section.sec-2 h1{
+    font-size: 50px;
+    font-family: var(--monstrate-b);
+}
+
+
+section.sec-2 .card h2{
+    font-family: var(--cuprum-b);
+}
+section.sec-2 .card p{
+    font-family: var(--monstrate);
+}
+section.sec-2 .card{
+    background: #e4e4e470;
+    height: 40vh;
+    padding: 1rem;
+    border: none;
+    margin: 1rem 0rem;
+    border: 2px solid rgb(157, 196, 241);
+}
+section.sec-2 .card .follow-link{
+    width: 100%;
+    height: 50vh;
+    border-radius: 4px;
+}
+
+section.sec-2 .card:hover{
+    box-shadow: 1px 2px 10px rgba(157, 196, 241, 0.603);
+}
+
+section.sec-2 .card .follow-link i{ 
+    font-size: 30px;
+    margin: 2rem 1.5rem;
+    color: rgb(0, 0, 0);
+}
+
+section.sec-2 .card button{
+    width: 80%;
+    margin: auto;
+}
+
+section.sec-3{
+    margin-top: 5rem;
+    background: linear-gradient(45deg,#95ffe4a1 , #3a619b83);
+    padding: 1rem 0rem;
+}
+section.sec-3 .carousel{
+    border-radius: 1rem;
+    overflow: hidden;
+}
+section.sec-3 .carousel .carousel-item{
+    position: relative;
+}
+section.sec-3 .carousel .carousel-inner .main-info{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50% ;
+    transform: translate(-50% , -50%);
+    text-align: center;
+}
+
+section.sec-3 .carousel .carousel-inner .main-info h1{
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 6px rgba(31, 31, 31, 0.466) ;
+    background: #ffffffd7;
+    padding: 4rem 2rem;
+    border-radius: .4rem;
+    margin: 4rem 0rem;
+}
+
+section.sec-3 .carousel .carousel-inner .main-info a{
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg,rgb(68, 211, 80) , rgb(91, 236, 115)); 
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+}   
+section.sec-3 .carousel .carousel-inner .main-info a:hover{      
+    box-shadow: 1px -1px 7px rgba(64, 245, 94, 0.678) ;
+    transition: .3s ease;
+}
+
+footer{
+    background: url(../image/main-footer.svg);
+    background-position: center;
+    background-size: cover;
+}
+footer .main-footer-box{
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+footer .but{
+    margin: 2rem 0rem;
+}
+footer .short-buttom{
+    border: 2px solid var(--black);
+    padding: .7rem 3rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    color: var(--black);
+    font-family: var(--monstrate-b);
+}
+footer .short-buttom.video:hover{
+    background-color: #cc5fff42;
+    box-shadow: 1px 1px 7px #cc5fff7a;
+}
+
+footer .short-buttom.Pdf:hover{
+    background-color: #5fc4ff42;
+    box-shadow: 1px 1px 7px #5f9fff;
+}
+footer .short-buttom.Home:hover{
+    background-color: #e8f71942;
+    box-shadow: 1px 1px 7px #f0fd35e3;
+}
+footer .short-buttom.About:hover{
+    background-color: #00000042;
+    box-shadow: 1px 1px 7px #000000e3;
+}
+footer .short-buttom.YouTube i{
+ font-size: 20px;
+}
+footer .short-buttom.instagram i{
+    font-size: 20px;
+}
+footer .short-buttom.instagram:hover{
+    background-color: #ff38e442;
+    box-shadow: 1px 1px 7px #ff38deb2;
+}
+footer .short-buttom.YouTube:hover{
+    background-color: #ff000042;
+    box-shadow: 1px 1px 7px #ff0000e3;
+}
+
+footer .copy-right{
+    font-family: var(--monstrate);
+}
+
+
+
+
+@media only screen and (max-width:800px){
+    section.sec-3 .carousel .carousel-inner .main-info h1{
+        font-size: 20px;
+        padding: 2rem 1rem;
+        margin: 2rem 0rem;
+    }
+    
+    section.sec-3 .carousel .carousel-inner .main-info a{
+        padding: .5rem 1rem;
+    } 
+    main .sec-1{
+        background: url(../image/back.svg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .nav_show{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:550px){
+    nav .navigation{
+        padding: 1rem 5rem;
+    }
+    header {
+        background:linear-gradient(60deg , rgba(100, 172, 255, 0.76) 100%, #ffffff00 0%), url(../image/tathagata_1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+    }
+    section.sec-3 .carousel .carousel-inner .main-info h1{
+        font-size: 14px;
+        padding: 1rem 1rem;
+        margin: 2rem 0rem;
+    }
+    section.sec-3 .carousel .carousel-inner .main-info a{
+        padding: .5rem 1rem;
+        font-size: 12px;
+    } 
+    section.sec-2 .card{
+        height: 50vh;
+    }
+    main .box{
+        height: 60vh;
+    }
+    
+    #popup{
+        width: 18rem;
+        height: 35rem;
+    }
+    #popUpMain #popup  input{
+        width: 14rem;
+        margin: .2rem;
+    }
+}
+
+@media only screen and (max-width:400px){
+    nav .navigation{
+        padding: 1rem 3rem;
+    }
+    header .name .intro{
+        font-size: 15px;
+    }
+    
+    header .name .intro h1{
+        font-size: 40px;
+    }
+    header .name .but {
+        padding: .5rem 1.5rem;
+    }
+    main .box {
+        height: 65vh;
+    }
+    section.sec-3 .carousel .carousel-inner .main-info{
+        top: 40%;
+    }
+    section.sec-3 .carousel .carousel-inner .main-info a{
+        padding: .5rem 1rem;
+        font-size: 12px;
+    } 
+}
+
+@media only screen and (max-width:320px){
+    main .box {
+        height: 73vh;
+        text-align: center;
+    }
+}

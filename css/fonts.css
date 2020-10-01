@@ -1,0 +1,17 @@
+@font-face{
+    font-family: 'monstrate';
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face{
+    font-family: 'monstrate-b';
+    src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
+}
+@font-face{
+    font-family: 'cuprum';
+    src: url(../fonts/Cuprum/Cuprum-Regular.ttf);
+}
+@font-face{
+    font-family: 'cuprum-b';
+    src: url(../fonts/Cuprum/Cuprum-Bold.ttf);
+}
+

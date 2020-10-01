@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUP</title>
+    <link rel="shortcut icon" href="./image/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <header>
+
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <div class="container">
+            <h1 class="text-center">Sign up</h1>
+            <div class="main-box">
+                <div class="logo"><a href="index.html"><img src="/image/big-icon.svg" alt="logo_icon"></a></div>
+                <div class="fields">
+                    <form action="">
+                        <input type="text" name="Full_name" placeholder="Full Name" required autocomplete="off">
+                        <input type="text" name="username" placeholder="Username" required autocomplete="off">
+                        <input type="email" name="email" placeholder="user@gmail.com" required autocomplete="off">
+                        <input type="Password" name="password1" placeholder="Create Password" required autocomplete="off">
+                        <input type="password" name="password2" placeholder="Confirm Password" required autocomplete="off">
+                        <a href="#"><Button class="btn btn-success">Sign in</Button></a>
+                    </form>
+                    <p class="mt-3">Have an account <a href="Login.html">Login</a></p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="./js/bootstrap.js"></script>
+</body>
+</html>

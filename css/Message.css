@@ -1,0 +1,48 @@
+@import url(./fonts.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* color */
+    --light-blue:linear-gradient(50deg , rgba(91, 250, 255, 0.76) 50%, #ffffff21 50%);
+    --black: black;
+    --black-l:linear-gradient(#000000cc , #000000b4);
+    --white:white;
+    --white-l: rgba(255, 255, 255, 0.8);
+
+    /* fonts */
+    --cuprum : 'cuprum';
+    --cuprum-b : 'cuprum-b';
+    --monstrate : 'monstrate';
+    --monstrate-b : 'monstrate-b';
+}
+
+
+header{
+    background: url(../image/message_back.svg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+header .main-message{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+header .main-message h1{
+    font-family: var(--monstrate-b);
+    font-size: 50px;
+}
+
+header .main-message p{
+    font-size: 30px;
+    font-family: var(--monstrate);
+}
