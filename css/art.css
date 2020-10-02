@@ -1,4 +1,4 @@
-@import url(./fonts.css);
+
 
 *{
     padding: 0;
@@ -15,10 +15,8 @@
     --white-l: rgba(255, 255, 255, 0.8);
 
     /* fonts */
-    --cuprum : 'cuprum';
-    --cuprum-b : 'cuprum-b';
-    --monstrate : 'monstrate';
-    --monstrate-b : 'monstrate-b';
+    --m: 'Montserrat', sans-serif;
+    --y:'Yeseva One', cursive;
 }
 
 li{
@@ -95,7 +93,7 @@ nav .navigation .bars .bar-3{
 header {
     height: 100vh;
     width: 100%;
-    background:var(--light-blue), url(../image/Tathagata_2.jpg);
+    background:linear-gradient(rgba(0, 0, 0, 0.548) , rgba(0, 0, 0, 0.548)) ,url(../image/Art_Demo_image.jpg);
     background-position: center;
     background-size: cover;
 
@@ -103,21 +101,21 @@ header {
 
 header .name{
     position: absolute;
-    left: 10%;
+    left: 50%;
     top: 50%;
-    transform: translate(0% , -50%);
+    transform: translate(-50% , -50%);
     z-index: 2;
 }
 header .name .intro{
     font-size: 20px;
-    font-family: var(--monstrate);
+    font-family: var(--m);
 }
 
 header .name .intro h1{
-    font-size: 60px;
+    font-size: 80px;
     color: var(--white);
-    font-family: var(--monstrate-b);
-    text-shadow: 1px 1px 4px rgba(211, 210, 210, 0.788);
+    font-family: var(--m);
+    font-weight: 700;
 }
 header .name .but {
     background: rgb(145, 47, 236);
@@ -133,7 +131,7 @@ header .name .line-text{
     align-items: center;
 }
 header .name p{
-    font-family: var(--monstrate);
+    font-family: var(--m);
     color: white;
 }
 header .name .line{
@@ -182,49 +180,26 @@ footer .but{
     margin: 2rem 0rem;
 }
 footer .short-buttom{
-    border: 2px solid var(--black);
-    padding: .7rem 3rem;
+    padding: .8rem 3rem;
     border-radius: 2rem;
     text-decoration: none;
     color: var(--black);
-    font-family: var(--monstrate-b);
-}
-footer .short-buttom.video:hover{
-    background-color: #cc5fff42;
-    box-shadow: 1px 1px 7px #cc5fff7a;
-}
-
-footer .short-buttom.Pdf:hover{
-    background-color: #5fc4ff42;
-    box-shadow: 1px 1px 7px #5f9fffa8;
-}
-footer .short-buttom.Home:hover{
-    background-color: #e8f71942;
-    box-shadow: 1px 1px 7px #f0fd35e3;
-}
-footer .short-buttom.About:hover{
-    background-color: #00000042;
-    box-shadow: 1px 1px 7px #000000e3;
+    font-family: var(--m);
+    font-weight: 600;
+    background: black;
+    color: white;
 }
 
-footer .short-buttom.instagram i{
-    font-size: 20px;
-}
-footer .short-buttom.instagram:hover{
-    background-color: #ff38e442;
-    box-shadow: 1px 1px 7px #ff38deb2;
-}
 
 footer .short-buttom.YouTube i{
  font-size: 20px;
 }
-footer .short-buttom.YouTube:hover{
-    background-color: #ff000042;
-    box-shadow: 1px 1px 7px #ff0000e3;
+footer .short-buttom.instagram i{
+    font-size: 20px;
 }
 
 footer .copy-right{
-    font-family: var(--monstrate);
+    font-family: var(--m);
 }
 
 

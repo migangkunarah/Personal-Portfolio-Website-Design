@@ -1,4 +1,4 @@
-@import url(./fonts.css);
+
 
 *{
     padding: 0;
@@ -15,10 +15,8 @@
     --white-l: rgba(255, 255, 255, 0.8);
 
     /* fonts */
-    --cuprum : 'cuprum';
-    --cuprum-b : 'cuprum-b';
-    --monstrate : 'monstrate';
-    --monstrate-b : 'monstrate-b';
+    --m: 'Montserrat', sans-serif;
+    --y:'Yeseva One', cursive;
 }
 
 header{
@@ -30,7 +28,7 @@ header{
     background-size: cover;
 }
 header h1{
-    font-family: var(--cuprum-b);
+    font-family: var(--y);
     font-size: 50px;
 }
 header .main-box{
@@ -70,16 +68,17 @@ header .main-box .fields  form input{
     border: none;
     background: none;
     border-bottom: 1.5px solid black;
-    font-family: var(--monstrate);
+    font-family: var(--m);
 }
 
 header .main-box .fields p{
-    font-family: var(--monstrate);
+    font-family: var(--m);
 }
 header .main-box .fields a{
     text-decoration: none;
     color: rgb(0, 63, 122);
-    font-family: var(--monstrate-b);
+    font-family: var(--m);
+    font-weight: 600;
 }
 header .main-box .fields a:hover{
     color: rgb(6, 108, 202);

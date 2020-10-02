@@ -1,4 +1,4 @@
-@import url(./fonts.css);
+
 
 *{
     padding: 0;
@@ -13,12 +13,9 @@
     --black-l:linear-gradient(#000000cc , #000000b4);
     --white:white;
     --white-l: rgba(255, 255, 255, 0.8);
-
     /* fonts */
-    --cuprum : 'cuprum';
-    --cuprum-b : 'cuprum-b';
-    --monstrate : 'monstrate';
-    --monstrate-b : 'monstrate-b';
+    --m: 'Montserrat', sans-serif;
+    --y:'Yeseva One', cursive;
 }
 
 li{
@@ -95,7 +92,7 @@ nav .navigation .bars .bar-3{
 header {
     height: 100vh;
     width: 100%;
-    background:var(--light-blue), url(../image/tathagata_1.jpg);
+    background:linear-gradient(rgba(0, 0, 0, 0.548) , rgba(0, 0, 0, 0.548)) ,url(../image/guitarits_2.jpg);
     background-position: center;
     background-size: cover;
 
@@ -103,20 +100,20 @@ header {
 
 header .name{
     position: absolute;
-    left: 10%;
+    left: 50%;
     top: 50%;
-    transform: translate(0% , -50%);
+    transform: translate(-50% , -50%);
     z-index: 2;
 }
 header .name .intro{
     font-size: 20px;
-    font-family: var(--monstrate);
+    font-family: var(--m);
+    color: white;
 }
 
 header .name .intro h1{
-    font-size: 60px;
-    font-family: var(--monstrate-b);
-    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.788);
+    font-size: 80px;
+    font-weight: 700;
 }
 header .name .but {
     background: rgb(145, 47, 236);
@@ -132,7 +129,7 @@ header .name .line-text{
     align-items: center;
 }
 header .name .line{
-    background: black;
+    background: rgb(255, 255, 255);
     height: 2px;
     width: 10rem;
     margin-bottom: .7rem;
@@ -156,7 +153,7 @@ main section.sec-1 .main-video-body{
     box-shadow: 1px 2px 15px rgba(128, 128, 128, 0.336);
 }
 main section.sec-1 .main-video-body h1{
-    font-family: var(--cuprum-b);
+    font-family: var(--y);
     color: rgb(0, 0, 0);
     text-shadow: 1px 1px 5px #00000085;
     font-size: 50px;
@@ -168,7 +165,7 @@ main section.sec-1 .main-video-body video{
 main section.sec-1 .main-video-body p{
     color: rgb(110, 110, 110);
     margin: 3rem 0rem 2rem 0rem;
-    font-family: var(--monstrate);
+    font-family: var(--m);
 }
 
 main section.sec-1 .main-video-body .but{
@@ -180,7 +177,7 @@ main section.sec-1 .main-video-body a{
     color: white;
     padding: 1rem 2rem;
     cursor: pointer;
-    font-family: var(--monstrate);
+    font-family: var(--m);
 }
 main section.sec-1 .main-video-body a.PDF{
     background-color: #2054ff;
@@ -212,58 +209,31 @@ footer .but{
     margin: 2rem 0rem;
 }
 footer .short-buttom{
-    border: 2px solid var(--black);
-    padding: .7rem 3rem;
+    padding: .8rem 3rem;
     border-radius: 2rem;
     text-decoration: none;
     color: var(--black);
-    font-family: var(--monstrate-b);
+    font-family: var(--m);
+    font-weight: 600;
+    background: black;
+    color: white;
 }
-footer .short-buttom.video:hover{
-    background-color: #cc5fff42;
-    box-shadow: 1px 1px 7px #cc5fff7a;
+
+
+footer .short-buttom.YouTube i{
+ font-size: 20px;
 }
 footer .short-buttom.instagram i{
     font-size: 20px;
 }
-footer .short-buttom.instagram:hover{
-    background-color: #ff38e442;
-    box-shadow: 1px 1px 7px #ff38deb2;
-}
-footer .short-buttom.Pdf:hover{
-    background-color: #5fc4ff42;
-    box-shadow: 1px 1px 7px #5f9fffa8;
-}
-footer .short-buttom.Home:hover{
-    background-color: #e8f71942;
-    box-shadow: 1px 1px 7px #f0fd35e3;
-}
-footer .short-buttom.About:hover{
-    background-color: #00000042;
-    box-shadow: 1px 1px 7px #000000e3;
-}
-footer .short-buttom.YouTube i{
- font-size: 20px;
-}
-footer .short-buttom.YouTube:hover{
-    background-color: #ff000042;
-    box-shadow: 1px 1px 7px #ff0000e3;
-}
 
 footer .copy-right{
-    font-family: var(--monstrate);
+    font-family: var(--m);
 }
 
 @media only screen and (max-width:800px){
     .nav_show{
         width: 100%;
-    }
-    header {
-        background: linear-gradient(50deg , rgba(104, 255, 104, 0.781) 100%, #ffffff21 50%), url(../image/tathagata_1.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    
     }
 }
 
