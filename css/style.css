@@ -73,7 +73,7 @@ nav .navigation .bars .bar-3{
     color: white;
     text-decoration: none;
     text-align: center;
-    font-family: var(--monstrate);
+    font-family: var(--m);
 }
 .items .nav-link{
     background-color: rgba(255, 255, 255, 0.24);
